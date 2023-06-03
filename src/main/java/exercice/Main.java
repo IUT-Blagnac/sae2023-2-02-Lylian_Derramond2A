@@ -4,9 +4,12 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        String texte = "exemple de texte a classer";
-        List<Character> ordre = List.of('c', 't', 'e', 'x', 'a', 'm', 'p', 'l', 's', 'r', 'd');
-        System.out.println(Exercice.solution(texte,ordre));
-        // output: [classer, texte, exemple, a, de]
+        String texte = "bonjour je suis lylian derramond et je suis content";
+        List<Character> ordre = List.of('j','s', 'l', 'd', 'e', 'c', 's', 'r', 't');
+        long startTime = System.nanoTime();
+        System.out.println(ExerciceSimple.solution(texte,ordre));
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime) / 1000000;
+        System.out.println("Le programme s'est exécuté en " + duration + " millisecondes.");
     }
 }
